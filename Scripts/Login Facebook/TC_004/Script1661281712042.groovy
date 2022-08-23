@@ -17,3 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://web.facebook.com/?_rdc=1&_rdr')
+
+WebUI.setText(findTestObject('Object Repository/Login Object/Page_Facebook  log in or sign up/input_Facebook helps you connect and share _ccef60'), 
+    'irasen0@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login Object/Page_Facebook  log in or sign up/input_Facebook helps you connect and share _ab63fc'), 
+    'tlu/Y8C6HZw3cp9zKZ291A==')
+
+WebUI.sendKeys(findTestObject('Object Repository/Login Object/Page_Facebook  log in or sign up/input_Facebook helps you connect and share _ab63fc'), 
+    Keys.chord(Keys.ENTER))
+
+WebUI.closeBrowser()
+
